@@ -19,6 +19,7 @@ Insert Into Streaming(UserID,Name,Email,Device,Country,Subscription,last_login,m
 (106,'Charlie','charliekirkneverdies@gmail.com','Tablet','US','Premium','NULL',20,'2014-05-18'),
 (107,'Ovuvuevuevue Enyetuenwuevue Ugbemugbem Osas','Longestname@yahoo.com','Mobile','Nigeria','Regular','2024-04-16',10,'2020-01-24');
 Insert Into Streaming(UserID,Name,Email,Device,Country,Subscription,last_login,monthly_fee,join_date)Values(108,'San Andrea','sanandrea@gmail.com','Tablet','Mexico','Premium','2020-02-02',20,'2014-05-27');
+Insert Into Streaming(UserID,Name,Email,Device,Country,Subscription,last_login,monthly_fee,join_date)Values(109,'Shreyas','ShreyasofFremont@gmail.com','Laptop','USA','Premium+','2026-06-05',40,'2012-05-18');
 
 Select * From Streaming;
 Select * From Streaming Where Subscription='Premium';
@@ -36,5 +37,11 @@ Select * From Streaming Where Country='India' and Subscription='Regular';
 Select * From Streaming Where Device='Mobile' and monthly_fee>10;
 Select * From Streaming Where Subscription!='Premium';
 Select * From Streaming Where Subscription='Regular' and last_login='NULL';
-Select * From Streaming Where Country='India' and Email Like '%yahoo%' and monthly_fee<20
+Select * From Streaming Where Country='India' and Email Like '%yahoo%' and monthly_fee<20;
 Select * From Streaming Where Name Like 'S%' and Subscription!='Regular'
+Order By monthly_fee DESC;
+Select * From Streaming
+Order By monthly_fee DESC;
+Select * From Streaming
+Order By join_date;
+Select * From Streaming Where join_date>'2024-01-01';
